@@ -9,7 +9,9 @@ tools["nvim-telescope/telescope.nvim"] = {
     config = conf.telescope,
     requires = {
         {"nvim-lua/plenary.nvim", opt = false},
-        {"nvim-lua/popup.nvim", opt = true}
+        {"nvim-lua/popup.nvim", opt = true},
+        {"BurntSushi/ripgrep", opt = true},
+        {"sharkdp/fd", opt = false}
     }
 }
 tools["nvim-telescope/telescope-fzf-native.nvim"] = {
