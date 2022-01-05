@@ -84,7 +84,7 @@ local plug_map = {
     ["n|<leader>cl"] = map_cr("TroubleToggle loclist"):with_noremap()
         :with_silent(),
     -- Plugin nvim-tree
-    ["n|<C-n>"] = map_cr("NvimTreeToggle"):with_noremap():with_silent(),
+    ["n|<F2>"] = map_cr("NvimTreeToggle"):with_noremap():with_silent(),
     ["n|<Leader>nf"] = map_cr("NvimTreeFindFile"):with_noremap():with_silent(),
     ["n|<Leader>nr"] = map_cr("NvimTreeRefresh"):with_noremap():with_silent(),
     -- Plugin Telescope
@@ -117,14 +117,14 @@ local plug_map = {
     ["n|T"] = map_cmd("v:lua.enhance_ft_move('T')"):with_expr(),
     ["n|;"] = map_cmd("v:lua.enhance_ft_move(';')"):with_expr(),
     -- Plugin Hop
-    ["n|<leader>w"] = map_cu("HopWord"):with_noremap(),
-    ["n|<leader>j"] = map_cu("HopLine"):with_noremap(),
-    ["n|<leader>k"] = map_cu("HopLine"):with_noremap(),
-    ["n|<leader>c"] = map_cu("HopChar1"):with_noremap(),
-    ["n|<leader>cc"] = map_cu("HopChar2"):with_noremap(),
+    -- ["n|<leader>w"] = map_cu("HopWord"):with_noremap(),
+    -- ["n|<leader>j"] = map_cu("HopLine"):with_noremap(),
+    -- ["n|<leader>k"] = map_cu("HopLine"):with_noremap(),
+    -- ["n|<leader>c"] = map_cu("HopChar1"):with_noremap(),
+    -- ["n|<leader>cc"] = map_cu("HopChar2"):with_noremap(),
     -- Plugin EasyAlign
-    ["n|ga"] = map_cmd("v:lua.enhance_align('nga')"):with_expr(),
-    ["x|ga"] = map_cmd("v:lua.enhance_align('xga')"):with_expr(),
+    -- ["n|ga"] = map_cmd("v:lua.enhance_align('nga')"):with_expr(),
+    -- ["x|ga"] = map_cmd("v:lua.enhance_align('xga')"):with_expr(),
     -- Plugin SymbolsOutline
     ["n|<A-t>"] = map_cr("SymbolsOutline"):with_noremap():with_silent(),
     -- Plugin split-term

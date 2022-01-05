@@ -76,6 +76,10 @@ lsp_installer.on_server_ready(function(server)
     local opts = {}
 
     if (server.name == "sumneko_lua") then
+        --local sumneko_root_path = '/root/.config/nvim/data'..'/nvim/lsp_servers/sumneko_lua/sumneko_lua.tmp/extension/server'
+        --print(sumneko_root_path)
+        --local sumneko_binary = sumneko_root_path.."/bin".."/lua-language-server"
+        --opts.cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
         opts.settings = {
             Lua = {
                 diagnostics = {globals = {"vim", "packer_plugins"}},

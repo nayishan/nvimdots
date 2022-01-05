@@ -1,22 +1,22 @@
 local editor = {}
 local conf = require("modules.editor.config")
 
-editor["junegunn/vim-easy-align"] = {opt = true, cmd = "EasyAlign"}
+-- editor["junegunn/vim-easy-align"] = {opt = true, cmd = "EasyAlign"}
 editor["itchyny/vim-cursorword"] = {
     opt = true,
     event = {"BufReadPre", "BufNewFile"},
     config = conf.vim_cursorwod
 }
-editor["terrortylor/nvim-comment"] = {
-    opt = false,
-    config = function()
-        require("nvim_comment").setup({
-            hook = function()
-                require("ts_context_commentstring.internal").update_commentstring()
-            end
-        })
-    end
-}
+--editor["terrortylor/nvim-comment"] = {
+    --opt = false,
+    --config = function()
+        --require("nvim_comment").setup({
+            --hook = function()
+                --require("ts_context_commentstring.internal").update_commentstring()
+            --end
+        --})
+    --end
+--}
 editor["simrat39/symbols-outline.nvim"] = {
     opt = true,
     cmd = {"SymbolsOutline", "SymbolsOutlineOpen"},
@@ -75,17 +75,17 @@ editor["romainl/vim-cool"] = {
     opt = true,
     event = {"CursorMoved", "InsertEnter"}
 }
-editor["phaazon/hop.nvim"] = {
-    opt = true,
-    branch = "v1",
-    cmd = {
-        "HopLine", "HopLineStart", "HopWord", "HopPattern", "HopChar1",
-        "HopChar2"
-    },
-    config = function()
-        require("hop").setup {keys = "etovxqpdygfblzhckisuran"}
-    end
-}
+--editor["phaazon/hop.nvim"] = {
+    --opt = true,
+    --branch = "v1",
+    --cmd = {
+        --"HopLine", "HopLineStart", "HopWord", "HopPattern", "HopChar1",
+        --"HopChar2"
+    --},
+    --config = function()
+        --require("hop").setup {keys = "etovxqpdygfblzhckisuran"}
+    --end
+--}
 editor["karb94/neoscroll.nvim"] = {
     opt = true,
     event = "WinScrolled",
